@@ -1,0 +1,8 @@
+# How to post weight to Garmin Connect:
+# First, get a login cookie, then simply make a json post to this API:
+
+https://connect.garmin.com/modern/proxy/weight-service/user-weight
+
+Post is made in JSON in the following format:
+
+{"value":173,"unitKey":"lbs","date":"2015-12-03"}
