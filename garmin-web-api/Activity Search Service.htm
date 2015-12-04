@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<title>Activity Search Service</title>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<div class="header">
+<div class="title">
+<h1>Activity Search Service</h1>
+</div>
+</div>
+<div class="content">
+<div class="item">
+<h1>REST</h1>
+<p>
+                    This API supports a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">Representational State Transfer (REST)</a>
+                    model for accessing a set of resources through a fixed set of operations. The following resources are accessible through the RESTful model:
+                  </p>
+<ul>
+<li>
+<a href="rest.activities.html">/activities</a>
+</li>
+<li>
+<a href="rest.activitynext.html">/activitynext</a>
+</li>
+<li>
+<a href="rest.activityprevious.html">/activityprevious</a>
+</li>
+<li>
+<a href="rest.activityrelative.html">/activityrelative</a>
+</li>
+<li>
+<a href="rest.explore.html">/explore</a>
+</li>
+<li>
+<a href="rest.matches.html">/matches</a>
+</li>
+<li>
+<a href="rest.matchesByDeviceId.html">/matchesByDeviceId</a>
+</li>
+<li>
+<a href="rest.operators.html">/operators</a>
+</li>
+<li>
+<a href="rest.query_options.html">/query_options</a>
+</li>
+<li>
+<a href="rest.searchable_fields.html">/searchable_fields</a>
+</li>
+<li>
+<a href="rest.feed.feedName.html">/feed/{feedName}</a>
+</li>
+</ul>
+</div>
+<div class="item">
+<h1>Data</h1>
+<p>
+                    All endpoints act on the same set of data described by <a href="http://www.w3.org/XML/Schema">XML Schema</a>. The following data
+                    (grouped by namespace) are available:
+                  </p>
+<h3>Default Namespace</h3>
+<p>(<a href="ns0.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns0.html#accessControl">accessControl</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#accessControlRule">accessControlRule</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activity">activity</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activityId">activityId</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activityMatch">activityMatch</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activityMatches">activityMatches</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activitySearchServiceConstants">activitySearchServiceConstants</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activitySearchServiceFilter">activitySearchServiceFilter</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activitySearchServiceQuery">activitySearchServiceQuery</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activitySearchServiceResults">activitySearchServiceResults</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activitySummary">activitySummary</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#applicationInstallation">applicationInstallation</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#baseSeries">baseSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#boundingBox">boundingBox</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#coordinate">coordinate</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#dictionaryResults">dictionaryResults</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#dictionaryType">dictionaryType</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#externalId">externalId</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#externalIds">externalIds</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#genericCenterPoint">genericCenterPoint</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#historySeries">historySeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#keyValueWithNames">keyValueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#location">location</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#longValue">longValue</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#longValueWithNames">longValueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#namedSeries">namedSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#oldSeries">oldSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#resourceMessageArguments">resourceMessageArguments</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#seriesFitCurrent">seriesFitCurrent</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#seriesFitOriginal">seriesFitOriginal</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#seriesTypeId">seriesTypeId</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#simpleBusinessValue">simpleBusinessValue</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#simpleIdentifier">simpleIdentifier</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#simpleStringIdentifier">simpleStringIdentifier</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#tag">tag</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#unitId">unitId</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#value">value</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#valueWithNames">valueWithNames</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_activity">activity</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_activityMatches">activityMatches</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_activitySearchServiceResults">activitySearchServiceResults</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_boundingBox">boundingBox</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_coordinate">coordinate</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_dictionaryResults">dictionaryResults</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_historySeries">historySeries</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_seriesFitCurrent">seriesFitCurrent</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_seriesFitOriginal">seriesFitOriginal</a>
+</li>
+</ul>
+<h3>Namespace <u>http://developer.garmin.com/schemas/axm</u>
+</h3>
+<p>(<a href="axm.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns1.html#definition">definition</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#dictionary">dictionary</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#display">display</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sidenav">
+<h1>Home</h1>
+<ul>
+<li>
+<a href="index.html">Introduction</a>
+</li>
+<li>
+<a href="downloads.html">downloads</a>
+</li>
+</ul>
+<h1>REST</h1>
+<ul>
+<li>
+<a href="rest.activities.html">/activities</a>
+</li>
+<li>
+<a href="rest.activitynext.html">/activitynext</a>
+</li>
+<li>
+<a href="rest.activityprevious.html">/activityprevious</a>
+</li>
+<li>
+<a href="rest.activityrelative.html">/activityrelative</a>
+</li>
+<li>
+<a href="rest.explore.html">/explore</a>
+</li>
+<li>
+<a href="rest.matches.html">/matches</a>
+</li>
+<li>
+<a href="rest.matchesByDeviceId.html">/matchesByDeviceId</a>
+</li>
+<li>
+<a href="rest.operators.html">/operators</a>
+</li>
+<li>
+<a href="rest.query_options.html">/query_options</a>
+</li>
+<li>
+<a href="rest.searchable_fields.html">/searchable_fields</a>
+</li>
+<li>
+<a href="rest.feed.feedName.html">/feed/{feedName}</a>
+</li>
+</ul>
+<h1>Data Types</h1>
+<ul>
+<li>
+<a href="data_ns0.html#accessControl">Type accessControl</a>
+</li>
+<li>
+<a href="data_ns0.html#accessControlRule">Type accessControlRule</a>
+</li>
+<li>
+<a href="data_ns0.html#activity">Type activity</a>
+</li>
+<li>
+<a href="data_ns0.html#activityId">Type activityId</a>
+</li>
+<li>
+<a href="data_ns0.html#activityMatch">Type activityMatch</a>
+</li>
+<li>
+<a href="data_ns0.html#activityMatches">Type activityMatches</a>
+</li>
+<li>
+<a href="data_ns0.html#activitySearchServiceConstants">Type activitySearchServiceConstants</a>
+</li>
+<li>
+<a href="data_ns0.html#activitySearchServiceFilter">Type activitySearchServiceFilter</a>
+</li>
+<li>
+<a href="data_ns0.html#activitySearchServiceQuery">Type activitySearchServiceQuery</a>
+</li>
+<li>
+<a href="data_ns0.html#activitySearchServiceResults">Type activitySearchServiceResults</a>
+</li>
+<li>
+<a href="data_ns0.html#activitySummary">Type activitySummary</a>
+</li>
+<li>
+<a href="data_ns0.html#applicationInstallation">Type applicationInstallation</a>
+</li>
+<li>
+<a href="data_ns0.html#baseSeries">Type baseSeries</a>
+</li>
+<li>
+<a href="data_ns0.html#boundingBox">Type boundingBox</a>
+</li>
+<li>
+<a href="data_ns0.html#coordinate">Type coordinate</a>
+</li>
+<li>
+<a href="data_ns1.html#definition">Type definition</a>
+</li>
+<li>
+<a href="data_ns1.html#dictionary">Type dictionary</a>
+</li>
+<li>
+<a href="data_ns0.html#dictionaryResults">Type dictionaryResults</a>
+</li>
+<li>
+<a href="data_ns0.html#dictionaryType">Type dictionaryType</a>
+</li>
+<li>
+<a href="data_ns1.html#display">Type display</a>
+</li>
+<li>
+<a href="data_ns0.html#externalId">Type externalId</a>
+</li>
+<li>
+<a href="data_ns0.html#externalIds">Type externalIds</a>
+</li>
+<li>
+<a href="data_ns0.html#genericCenterPoint">Type genericCenterPoint</a>
+</li>
+<li>
+<a href="data_ns0.html#historySeries">Type historySeries</a>
+</li>
+<li>
+<a href="data_ns0.html#keyValueWithNames">Type keyValueWithNames</a>
+</li>
+<li>
+<a href="data_ns0.html#location">Type location</a>
+</li>
+<li>
+<a href="data_ns0.html#longValue">Type longValue</a>
+</li>
+<li>
+<a href="data_ns0.html#longValueWithNames">Type longValueWithNames</a>
+</li>
+<li>
+<a href="data_ns0.html#namedSeries">Type namedSeries</a>
+</li>
+<li>
+<a href="data_ns0.html#oldSeries">Type oldSeries</a>
+</li>
+<li>
+<a href="data_ns0.html#resourceMessageArguments">Type resourceMessageArguments</a>
+</li>
+<li>
+<a href="data_ns0.html#seriesFitCurrent">Type seriesFitCurrent</a>
+</li>
+<li>
+<a href="data_ns0.html#seriesFitOriginal">Type seriesFitOriginal</a>
+</li>
+<li>
+<a href="data_ns0.html#seriesTypeId">Type seriesTypeId</a>
+</li>
+<li>
+<a href="data_ns0.html#simpleBusinessValue">Type simpleBusinessValue</a>
+</li>
+<li>
+<a href="data_ns0.html#simpleIdentifier">Type simpleIdentifier</a>
+</li>
+<li>
+<a href="data_ns0.html#simpleStringIdentifier">Type simpleStringIdentifier</a>
+</li>
+<li>
+<a href="data_ns0.html#tag">Type tag</a>
+</li>
+<li>
+<a href="data_ns0.html#unitId">Type unitId</a>
+</li>
+<li>
+<a href="data_ns0.html#value">Type value</a>
+</li>
+<li>
+<a href="data_ns0.html#valueWithNames">Type valueWithNames</a>
+</li>
+</ul>
+</div>
+<div class="clearer">
+<span/>
+</div>
+</div>
+<div class="footer">&#169; www.garmin.com.
+      Valid 
+<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and 
+<a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+      Generated by 
+<a href="http://enunciate.codehaus.org">Enunciate</a>. Template design by 
+<a href="http://templates.arcsin.se">Arcsin</a>.
+    </div>
+</div>
+</body>
+</html>

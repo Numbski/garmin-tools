@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<title>Goal Service</title>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<div class="header">
+<div class="title">
+<h1>Goal Service</h1>
+</div>
+</div>
+<div class="content">
+<div class="item">
+<h1>SOAP</h1>
+<p>
+                    This API is exposed through a set of <a href="http://www.ws-i.org/Profiles/BasicProfile-1.0.html">WSI Basic Profile</a>
+                    -compliant SOAP v1.1 endpoints. The API supports <a href="http://www.w3.org/TR/2005/REC-xop10-20050125/">XML-binary Optimized Pacakging (XOP)</a>
+                    and <a href="http://www.w3.org/TR/2004/WD-soap12-mtom-20040608/">SOAP Message Transmission Optimization Mechanism (MTOM)</a>
+                    for transmission of binary data. The SOAP API is fully described by the following endpoints:
+                  </p>
+<h3>Namespace <u>http://api.garmin.com/1.0/goal-service-api</u>:</h3>
+<p>(<a href="ns1.wsdl">wsdl here</a>)</p>
+<ul>
+<li>
+<a href="soap_ns1_GoalServiceService.html">GoalServiceService</a>
+</li>
+</ul>
+<p>
+                      The SOAP API is also accessible by client-side libraries that can be downloaded from the <a href="downloads.html">download page</a>.
+                    </p>
+</div>
+<div class="item">
+<h1>REST</h1>
+<p>
+                    This API supports a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">Representational State Transfer (REST)</a>
+                    model for accessing a set of resources through a fixed set of operations. The following resources are accessible through the RESTful model:
+                  </p>
+<ul>
+<li>
+<a href="rest.goal.html">/goal</a>
+</li>
+<li>
+<a href="rest.goalType.html">/goalType</a>
+</li>
+<li>
+<a href="rest.goals.html">/goals</a>
+</li>
+<li>
+<a href="rest.goalsById.html">/goalsById</a>
+</li>
+<li>
+<a href="rest.goalsWithDummies.html">/goalsWithDummies</a>
+</li>
+<li>
+<a href="rest.period.html">/period</a>
+</li>
+<li>
+<a href="rest.personalizedUnits.html">/personalizedUnits</a>
+</li>
+<li>
+<a href="rest.activityType.goalIdValue.html">/activityType/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.goal.goalIdValue.html">/goal/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.goalType.goalIdValue.html">/goalType/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.name.goalIdValue.html">/name/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.period.goalIdValue.html">/period/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.privacy.goalIdValue.html">/privacy/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.startDate.goalIdValue.html">/startDate/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.target.goalIdValue.html">/target/{goalIdValue}</a>
+</li>
+</ul>
+</div>
+<div class="item">
+<h1>Data</h1>
+<p>
+                    All endpoints act on the same set of data described by <a href="http://www.w3.org/XML/Schema">XML Schema</a>. The following data
+                    (grouped by namespace) are available:
+                  </p>
+<h3>Default Namespace</h3>
+<p>(<a href="ns7.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns7.html#goalTrackingTypeList">goalTrackingTypeList</a>
+</li>
+<li>
+                              Type <a href="data_ns7.html#goalTrackingTypeResults">goalTrackingTypeResults</a>
+</li>
+<li>
+                              Type <a href="data_ns7.html#resourceMessageArguments">resourceMessageArguments</a>
+</li>
+<li>
+                              Element <a href="data_ns7.html#element_goalTrackingTypeResults">goalTrackingTypeResults</a>
+</li>
+</ul>
+<h3>Namespace <u>http://api.garmin.com/1.0/goal-service-data</u>
+</h3>
+<p>(<a href="ns0.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns0.html#activityGoals">activityGoals</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#goal">goal</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#goalFraction">goalFraction</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#goals">goals</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#personalizedUnit">personalizedUnit</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#personalizedUnits">personalizedUnits</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_activityGoals">activityGoals</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_goal">goal</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_goalFraction">goalFraction</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_goals">goals</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_personalizedUnit">personalizedUnit</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_personalizedUnits">personalizedUnits</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sidenav">
+<h1>Home</h1>
+<ul>
+<li>
+<a href="index.html">Introduction</a>
+</li>
+<li>
+<a href="downloads.html">downloads</a>
+</li>
+</ul>
+<h1>SOAP</h1>
+<ul>
+<li>
+<a href="soap_ns1_GoalServiceService.html">GoalServiceService</a>
+</li>
+</ul>
+<h1>REST</h1>
+<ul>
+<li>
+<a href="rest.goal.html">/goal</a>
+</li>
+<li>
+<a href="rest.goalType.html">/goalType</a>
+</li>
+<li>
+<a href="rest.goals.html">/goals</a>
+</li>
+<li>
+<a href="rest.goalsById.html">/goalsById</a>
+</li>
+<li>
+<a href="rest.goalsWithDummies.html">/goalsWithDummies</a>
+</li>
+<li>
+<a href="rest.period.html">/period</a>
+</li>
+<li>
+<a href="rest.personalizedUnits.html">/personalizedUnits</a>
+</li>
+<li>
+<a href="rest.activityType.goalIdValue.html">/activityType/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.goal.goalIdValue.html">/goal/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.goalType.goalIdValue.html">/goalType/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.name.goalIdValue.html">/name/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.period.goalIdValue.html">/period/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.privacy.goalIdValue.html">/privacy/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.startDate.goalIdValue.html">/startDate/{goalIdValue}</a>
+</li>
+<li>
+<a href="rest.target.goalIdValue.html">/target/{goalIdValue}</a>
+</li>
+</ul>
+<h1>Data Types</h1>
+<ul>
+<li>
+<a href="data_ns0.html#activityGoals">Type activityGoals</a>
+</li>
+<li>
+<a href="data_ns0.html#goal">Type goal</a>
+</li>
+<li>
+<a href="data_ns0.html#goalFraction">Type goalFraction</a>
+</li>
+<li>
+<a href="data_ns0.html#goals">Type goals</a>
+</li>
+<li>
+<a href="data_ns7.html#goalTrackingTypeList">Type goalTrackingTypeList</a>
+</li>
+<li>
+<a href="data_ns7.html#goalTrackingTypeResults">Type goalTrackingTypeResults</a>
+</li>
+<li>
+<a href="data_ns0.html#personalizedUnit">Type personalizedUnit</a>
+</li>
+<li>
+<a href="data_ns0.html#personalizedUnits">Type personalizedUnits</a>
+</li>
+<li>
+<a href="data_ns7.html#resourceMessageArguments">Type resourceMessageArguments</a>
+</li>
+</ul>
+</div>
+<div class="clearer">
+<span/>
+</div>
+</div>
+<div class="footer">&#169; www.garmin.com.
+      Valid 
+<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and 
+<a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+      Generated by 
+<a href="http://enunciate.codehaus.org">Enunciate</a>. Template design by 
+<a href="http://templates.arcsin.se">Arcsin</a>.
+    </div>
+</div>
+</body>
+</html>

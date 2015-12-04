@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<title>Upload Service</title>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<div class="header">
+<div class="title">
+<h1>Upload Service</h1>
+</div>
+</div>
+<div class="content">
+<div class="item">
+<h1>Introduction</h1>
+<p>
+    <p>The Upload Service allows you to perform uploads to the Garmin Connect API, and subsequently retrieve these
+imported files by user, activity or it's unique identifier.
+
+<p>As with the rest of our services, authentication and authorization are handled via OAuth,
+and is provided with a full SOAP and REST API.</p>
+
+<h1>How to get Started</h1>
+<p>INSERT LINK TO ACQUIRING AN AUTH KEY.</p>
+
+<h1>Disclaimer</h1>
+<p>INSERT LEGAL DISCLAIMER HERE. Reference the downloadable License file.</p>
+  </p>
+</div>
+<div class="item">
+<h1>REST</h1>
+<p>
+                    This API supports a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">Representational State Transfer (REST)</a>
+                    model for accessing a set of resources through a fixed set of operations. The following resources are accessible through the RESTful model:
+                  </p>
+<ul>
+<li>
+<a href="rest.fileAndReport.html">/fileAndReport</a>
+</li>
+<li>
+<a href="rest.report.html">/report</a>
+</li>
+<li>
+<a href="rest.upload.html">/upload</a>
+</li>
+<li>
+<a href="rest.activity.activityId.html">/activity/{activityId}</a>
+</li>
+<li>
+<a href="rest.meta.uploadId.html">/meta/{uploadId}</a>
+</li>
+<li>
+<a href="rest.upload.uploadId.html">/upload/{uploadId}</a>
+</li>
+<li>
+<a href="rest.user.username.html">/user/{username}</a>
+</li>
+</ul>
+</div>
+<div class="item">
+<h1>Data</h1>
+<p>
+                    All endpoints act on the same set of data described by <a href="http://www.w3.org/XML/Schema">XML Schema</a>. The following data
+                    (grouped by namespace) are available:
+                  </p>
+<h3>Default Namespace</h3>
+<p>(<a href="ns0.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns0.html#accessControl">accessControl</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#accessControlRule">accessControlRule</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activity">activity</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activityImportEntry">activityImportEntry</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activityImportMessage">activityImportMessage</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#activitySummary">activitySummary</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#applicationInstallation">applicationInstallation</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#baseSeries">baseSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#fitHistorySeries">fitHistorySeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#historySeries">historySeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#importResult">importResult</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#keyValueWithNames">keyValueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#location">location</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#longValue">longValue</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#longValueWithNames">longValueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#namedSeries">namedSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#oldSeries">oldSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#report">report</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#seriesTypeId">seriesTypeId</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#serviceConstants">serviceConstants</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#simpleBusinessValue">simpleBusinessValue</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#simpleIdentifier">simpleIdentifier</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#tag">tag</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#unitId">unitId</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#uploadedFile">uploadedFile</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#uploadedFileMetaCollection">uploadedFileMetaCollection</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#uploadFileAndReport">uploadFileAndReport</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#uploadReport">uploadReport</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#value">value</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#valueWithNames">valueWithNames</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_activity">activity</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_historySeries">historySeries</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_importResult">importResult</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_uploadedFile">uploadedFile</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_uploadedFileMetaCollection">uploadedFileMetaCollection</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_uploadFileAndReport">uploadFileAndReport</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sidenav">
+<h1>Home</h1>
+<ul>
+<li>
+<a href="index.html">Introduction</a>
+</li>
+<li>
+<a href="downloads.html">downloads</a>
+</li>
+</ul>
+<h1>REST</h1>
+<ul>
+<li>
+<a href="rest.fileAndReport.html">/fileAndReport</a>
+</li>
+<li>
+<a href="rest.report.html">/report</a>
+</li>
+<li>
+<a href="rest.upload.html">/upload</a>
+</li>
+<li>
+<a href="rest.activity.activityId.html">/activity/{activityId}</a>
+</li>
+<li>
+<a href="rest.meta.uploadId.html">/meta/{uploadId}</a>
+</li>
+<li>
+<a href="rest.upload.uploadId.html">/upload/{uploadId}</a>
+</li>
+<li>
+<a href="rest.user.username.html">/user/{username}</a>
+</li>
+</ul>
+<h1>Data Types</h1>
+<ul>
+<li>
+<a href="data_ns0.html#accessControl">Type accessControl</a>
+</li>
+<li>
+<a href="data_ns0.html#accessControlRule">Type accessControlRule</a>
+</li>
+<li>
+<a href="data_ns0.html#activity">Type activity</a>
+</li>
+<li>
+<a href="data_ns0.html#activityImportEntry">Type activityImportEntry</a>
+</li>
+<li>
+<a href="data_ns0.html#activityImportMessage">Type activityImportMessage</a>
+</li>
+<li>
+<a href="data_ns0.html#activitySummary">Type activitySummary</a>
+</li>
+<li>
+<a href="data_ns0.html#applicationInstallation">Type applicationInstallation</a>
+</li>
+<li>
+<a href="data_ns0.html#baseSeries">Type baseSeries</a>
+</li>
+<li>
+<a href="data_ns0.html#fitHistorySeries">Type fitHistorySeries</a>
+</li>
+<li>
+<a href="data_ns0.html#historySeries">Type historySeries</a>
+</li>
+<li>
+<a href="data_ns0.html#importResult">Type importResult</a>
+</li>
+<li>
+<a href="data_ns0.html#keyValueWithNames">Type keyValueWithNames</a>
+</li>
+<li>
+<a href="data_ns0.html#location">Type location</a>
+</li>
+<li>
+<a href="data_ns0.html#longValue">Type longValue</a>
+</li>
+<li>
+<a href="data_ns0.html#longValueWithNames">Type longValueWithNames</a>
+</li>
+<li>
+<a href="data_ns0.html#namedSeries">Type namedSeries</a>
+</li>
+<li>
+<a href="data_ns0.html#oldSeries">Type oldSeries</a>
+</li>
+<li>
+<a href="data_ns0.html#report">Type report</a>
+</li>
+<li>
+<a href="data_ns0.html#seriesTypeId">Type seriesTypeId</a>
+</li>
+<li>
+<a href="data_ns0.html#serviceConstants">Type serviceConstants</a>
+</li>
+<li>
+<a href="data_ns0.html#simpleBusinessValue">Type simpleBusinessValue</a>
+</li>
+<li>
+<a href="data_ns0.html#simpleIdentifier">Type simpleIdentifier</a>
+</li>
+<li>
+<a href="data_ns0.html#tag">Type tag</a>
+</li>
+<li>
+<a href="data_ns0.html#unitId">Type unitId</a>
+</li>
+<li>
+<a href="data_ns0.html#uploadedFile">Type uploadedFile</a>
+</li>
+<li>
+<a href="data_ns0.html#uploadedFileMetaCollection">Type uploadedFileMetaCollection</a>
+</li>
+<li>
+<a href="data_ns0.html#uploadFileAndReport">Type uploadFileAndReport</a>
+</li>
+<li>
+<a href="data_ns0.html#uploadReport">Type uploadReport</a>
+</li>
+<li>
+<a href="data_ns0.html#value">Type value</a>
+</li>
+<li>
+<a href="data_ns0.html#valueWithNames">Type valueWithNames</a>
+</li>
+</ul>
+</div>
+<div class="clearer">
+<span/>
+</div>
+</div>
+<div class="footer">&#169; www.garmin.com.
+      Valid 
+<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and 
+<a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+      Generated by 
+<a href="http://enunciate.codehaus.org">Enunciate</a>. Template design by 
+<a href="http://templates.arcsin.se">Arcsin</a>.
+    </div>
+</div>
+</body>
+</html>

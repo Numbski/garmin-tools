@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<title>User Service</title>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<div class="header">
+<div class="title">
+<h1>User Service</h1>
+</div>
+</div>
+<div class="content">
+<div class="item">
+<h1>Introduction</h1>
+<p>
+    
+  </p>
+</div>
+<div class="item">
+<h1>REST</h1>
+<p>
+                    This API supports a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">Representational State Transfer (REST)</a>
+                    model for accessing a set of resources through a fixed set of operations. The following resources are accessible through the RESTful model:
+                  </p>
+<ul>
+<li>
+<a href="rest.PersonalRecord.defaultSport.html">/PersonalRecord.defaultSport</a>
+</li>
+<li>
+<a href="rest.account.html">/account</a>
+</li>
+<li>
+<a href="rest.activity_class.html">/activity_class</a>
+</li>
+<li>
+<a href="rest.birth_date.html">/birth_date</a>
+</li>
+<li>
+<a href="rest.date_format.html">/date_format</a>
+</li>
+<li>
+<a href="rest.day.html">/day</a>
+</li>
+<li>
+<a href="rest.days.html">/days</a>
+</li>
+<li>
+<a href="rest.display.html">/display</a>
+</li>
+<li>
+<a href="rest.display_name.html">/display_name</a>
+</li>
+<li>
+<a href="rest.email_activity_comment.html">/email_activity_comment</a>
+</li>
+<li>
+<a href="rest.email_earlier_activity_comment.html">/email_earlier_activity_comment</a>
+</li>
+<li>
+<a href="rest.email_friend_confirmation_request.html">/email_friend_confirmation_request</a>
+</li>
+<li>
+<a href="rest.email_friend_request.html">/email_friend_request</a>
+</li>
+<li>
+<a href="rest.export_check_list.html">/export_check_list</a>
+</li>
+<li>
+<a href="rest.export_preview.html">/export_preview</a>
+</li>
+<li>
+<a href="rest.flag_delete.html">/flag_delete</a>
+</li>
+<li>
+<a href="rest.gender.html">/gender</a>
+</li>
+<li>
+<a href="rest.genders.html">/genders</a>
+</li>
+<li>
+<a href="rest.healthHistory.html">/healthHistory</a>
+</li>
+<li>
+<a href="rest.health_data.html">/health_data</a>
+</li>
+<li>
+<a href="rest.heart_rate_display.html">/heart_rate_display</a>
+</li>
+<li>
+<a href="rest.heart_rate_zones.html">/heart_rate_zones</a>
+</li>
+<li>
+<a href="rest.height.html">/height</a>
+</li>
+<li>
+<a href="rest.locale.html">/locale</a>
+</li>
+<li>
+<a href="rest.map_provider_type.html">/map_provider_type</a>
+</li>
+<li>
+<a href="rest.measurement_unit_system.html">/measurement_unit_system</a>
+</li>
+<li>
+<a href="rest.measurement_unit_systems.html">/measurement_unit_systems</a>
+</li>
+<li>
+<a href="rest.notifications.html">/notifications</a>
+</li>
+<li>
+<a href="rest.number_format.html">/number_format</a>
+</li>
+<li>
+<a href="rest.opt_in_notifications.html">/opt_in_notifications</a>
+</li>
+<li>
+<a href="rest.opt_out_notifications.html">/opt_out_notifications</a>
+</li>
+<li>
+<a href="rest.power_display.html">/power_display</a>
+</li>
+<li>
+<a href="rest.power_zones.html">/power_zones</a>
+</li>
+<li>
+<a href="rest.privacy.html">/privacy</a>
+</li>
+<li>
+<a href="rest.retrieveRollsAfterUserSync.html">/retrieveRollsAfterUserSync</a>
+</li>
+<li>
+<a href="rest.role.html">/role</a>
+</li>
+<li>
+<a href="rest.time_format.html">/time_format</a>
+</li>
+<li>
+<a href="rest.timezone.html">/timezone</a>
+</li>
+<li>
+<a href="rest.toc_accepted.html">/toc_accepted</a>
+</li>
+<li>
+<a href="rest.user.html">/user</a>
+</li>
+<li>
+<a href="rest.userMatch.html">/userMatch</a>
+</li>
+<li>
+<a href="rest.user_display.html">/user_display</a>
+</li>
+<li>
+<a href="rest.user_preference.html">/user_preference</a>
+</li>
+<li>
+<a href="rest.user_preferences.html">/user_preferences</a>
+</li>
+<li>
+<a href="rest.vO2Max.html">/vO2Max</a>
+</li>
+<li>
+<a href="rest.weight.html">/weight</a>
+</li>
+<li>
+<a href="rest.displayname_available.displayname.html">/displayname_available/{displayname}</a>
+</li>
+<li>
+<a href="rest.sportSettings.sport.html">/sportSettings/{sport}</a>
+</li>
+<li>
+<a href="rest.username_available.username.html">/username_available/{username}</a>
+</li>
+</ul>
+</div>
+<div class="item">
+<h1>Data</h1>
+<p>
+                    All endpoints act on the same set of data described by <a href="http://www.w3.org/XML/Schema">XML Schema</a>. The following data
+                    (grouped by namespace) are available:
+                  </p>
+<h3>Default Namespace</h3>
+<p>(<a href="ns1.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns1.html#baseSeries">baseSeries</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#categorizedReports">categorizedReports</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#emailAddress">emailAddress</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#formatLocaleId">formatLocaleId</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#keyValueWithNames">keyValueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#longValue">longValue</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#longValueWithNames">longValueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#measurementSystemId">measurementSystemId</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#numberSymbolId">numberSymbolId</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#powerZonesJsonConverter">powerZonesJsonConverter</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#resourceMessageArguments">resourceMessageArguments</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#role">role</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#seriesFitCurrent">seriesFitCurrent</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#seriesFitOriginal">seriesFitOriginal</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#simpleBusinessValue">simpleBusinessValue</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#simpleIdentifier">simpleIdentifier</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#tag">tag</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#timeFormatId">timeFormatId</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#unitId">unitId</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#userPreference">userPreference</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#userPreferences">userPreferences</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#userProfile">userProfile</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#userProfileSportSettings">userProfileSportSettings</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#userProfileWithZones">userProfileWithZones</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#value">value</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#valueWithNames">valueWithNames</a>
+</li>
+<li>
+                              Type <a href="data_ns1.html#zonesJsonConverter">zonesJsonConverter</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_categorizedReports">categorizedReports</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_seriesFitCurrent">seriesFitCurrent</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_seriesFitOriginal">seriesFitOriginal</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_userPreference">userPreference</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_userPreferences">userPreferences</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_userProfile">userProfile</a>
+</li>
+<li>
+                              Element <a href="data_ns1.html#element_userProfileWithZones">userProfileWithZones</a>
+</li>
+</ul>
+<h3>Namespace <u>http://api.garmin.com/1.0/user-service-data</u>
+</h3>
+<p>(<a href="user-data.xsd">schema here</a>)</p>
+<ul>
+<li>
+                              Type <a href="data_ns0.html#account">account</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#autoLogin">autoLogin</a>
+</li>
+<li>
+                              Type <a href="data_ns0.html#jsonZone">jsonZone</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_account">account</a>
+</li>
+<li>
+                              Element <a href="data_ns0.html#element_autoLogin">autoLogin</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="sidenav">
+<h1>Home</h1>
+<ul>
+<li>
+<a href="index.html">Introduction</a>
+</li>
+<li>
+<a href="downloads.html">downloads</a>
+</li>
+</ul>
+<h1>REST</h1>
+<ul>
+<li>
+<a href="rest.PersonalRecord.defaultSport.html">/PersonalRecord.defaultSport</a>
+</li>
+<li>
+<a href="rest.account.html">/account</a>
+</li>
+<li>
+<a href="rest.activity_class.html">/activity_class</a>
+</li>
+<li>
+<a href="rest.birth_date.html">/birth_date</a>
+</li>
+<li>
+<a href="rest.date_format.html">/date_format</a>
+</li>
+<li>
+<a href="rest.day.html">/day</a>
+</li>
+<li>
+<a href="rest.days.html">/days</a>
+</li>
+<li>
+<a href="rest.display.html">/display</a>
+</li>
+<li>
+<a href="rest.display_name.html">/display_name</a>
+</li>
+<li>
+<a href="rest.email_activity_comment.html">/email_activity_comment</a>
+</li>
+<li>
+<a href="rest.email_earlier_activity_comment.html">/email_earlier_activity_comment</a>
+</li>
+<li>
+<a href="rest.email_friend_confirmation_request.html">/email_friend_confirmation_request</a>
+</li>
+<li>
+<a href="rest.email_friend_request.html">/email_friend_request</a>
+</li>
+<li>
+<a href="rest.export_check_list.html">/export_check_list</a>
+</li>
+<li>
+<a href="rest.export_preview.html">/export_preview</a>
+</li>
+<li>
+<a href="rest.flag_delete.html">/flag_delete</a>
+</li>
+<li>
+<a href="rest.gender.html">/gender</a>
+</li>
+<li>
+<a href="rest.genders.html">/genders</a>
+</li>
+<li>
+<a href="rest.healthHistory.html">/healthHistory</a>
+</li>
+<li>
+<a href="rest.health_data.html">/health_data</a>
+</li>
+<li>
+<a href="rest.heart_rate_display.html">/heart_rate_display</a>
+</li>
+<li>
+<a href="rest.heart_rate_zones.html">/heart_rate_zones</a>
+</li>
+<li>
+<a href="rest.height.html">/height</a>
+</li>
+<li>
+<a href="rest.locale.html">/locale</a>
+</li>
+<li>
+<a href="rest.map_provider_type.html">/map_provider_type</a>
+</li>
+<li>
+<a href="rest.measurement_unit_system.html">/measurement_unit_system</a>
+</li>
+<li>
+<a href="rest.measurement_unit_systems.html">/measurement_unit_systems</a>
+</li>
+<li>
+<a href="rest.notifications.html">/notifications</a>
+</li>
+<li>
+<a href="rest.number_format.html">/number_format</a>
+</li>
+<li>
+<a href="rest.opt_in_notifications.html">/opt_in_notifications</a>
+</li>
+<li>
+<a href="rest.opt_out_notifications.html">/opt_out_notifications</a>
+</li>
+<li>
+<a href="rest.power_display.html">/power_display</a>
+</li>
+<li>
+<a href="rest.power_zones.html">/power_zones</a>
+</li>
+<li>
+<a href="rest.privacy.html">/privacy</a>
+</li>
+<li>
+<a href="rest.retrieveRollsAfterUserSync.html">/retrieveRollsAfterUserSync</a>
+</li>
+<li>
+<a href="rest.role.html">/role</a>
+</li>
+<li>
+<a href="rest.time_format.html">/time_format</a>
+</li>
+<li>
+<a href="rest.timezone.html">/timezone</a>
+</li>
+<li>
+<a href="rest.toc_accepted.html">/toc_accepted</a>
+</li>
+<li>
+<a href="rest.user.html">/user</a>
+</li>
+<li>
+<a href="rest.userMatch.html">/userMatch</a>
+</li>
+<li>
+<a href="rest.user_display.html">/user_display</a>
+</li>
+<li>
+<a href="rest.user_preference.html">/user_preference</a>
+</li>
+<li>
+<a href="rest.user_preferences.html">/user_preferences</a>
+</li>
+<li>
+<a href="rest.vO2Max.html">/vO2Max</a>
+</li>
+<li>
+<a href="rest.weight.html">/weight</a>
+</li>
+<li>
+<a href="rest.displayname_available.displayname.html">/displayname_available/{displayname}</a>
+</li>
+<li>
+<a href="rest.sportSettings.sport.html">/sportSettings/{sport}</a>
+</li>
+<li>
+<a href="rest.username_available.username.html">/username_available/{username}</a>
+</li>
+</ul>
+<h1>Data Types</h1>
+<ul>
+<li>
+<a href="data_ns0.html#account">Type account</a>
+</li>
+<li>
+<a href="data_ns0.html#autoLogin">Type autoLogin</a>
+</li>
+<li>
+<a href="data_ns1.html#baseSeries">Type baseSeries</a>
+</li>
+<li>
+<a href="data_ns1.html#categorizedReports">Type categorizedReports</a>
+</li>
+<li>
+<a href="data_ns1.html#emailAddress">Type emailAddress</a>
+</li>
+<li>
+<a href="data_ns1.html#formatLocaleId">Type formatLocaleId</a>
+</li>
+<li>
+<a href="data_ns0.html#jsonZone">Type jsonZone</a>
+</li>
+<li>
+<a href="data_ns1.html#keyValueWithNames">Type keyValueWithNames</a>
+</li>
+<li>
+<a href="data_ns1.html#longValue">Type longValue</a>
+</li>
+<li>
+<a href="data_ns1.html#longValueWithNames">Type longValueWithNames</a>
+</li>
+<li>
+<a href="data_ns1.html#measurementSystemId">Type measurementSystemId</a>
+</li>
+<li>
+<a href="data_ns1.html#numberSymbolId">Type numberSymbolId</a>
+</li>
+<li>
+<a href="data_ns1.html#powerZonesJsonConverter">Type powerZonesJsonConverter</a>
+</li>
+<li>
+<a href="data_ns1.html#resourceMessageArguments">Type resourceMessageArguments</a>
+</li>
+<li>
+<a href="data_ns1.html#role">Type role</a>
+</li>
+<li>
+<a href="data_ns1.html#seriesFitCurrent">Type seriesFitCurrent</a>
+</li>
+<li>
+<a href="data_ns1.html#seriesFitOriginal">Type seriesFitOriginal</a>
+</li>
+<li>
+<a href="data_ns1.html#simpleBusinessValue">Type simpleBusinessValue</a>
+</li>
+<li>
+<a href="data_ns1.html#simpleIdentifier">Type simpleIdentifier</a>
+</li>
+<li>
+<a href="data_ns1.html#tag">Type tag</a>
+</li>
+<li>
+<a href="data_ns1.html#timeFormatId">Type timeFormatId</a>
+</li>
+<li>
+<a href="data_ns1.html#unitId">Type unitId</a>
+</li>
+<li>
+<a href="data_ns1.html#userPreference">Type userPreference</a>
+</li>
+<li>
+<a href="data_ns1.html#userPreferences">Type userPreferences</a>
+</li>
+<li>
+<a href="data_ns1.html#userProfile">Type userProfile</a>
+</li>
+<li>
+<a href="data_ns1.html#userProfileSportSettings">Type userProfileSportSettings</a>
+</li>
+<li>
+<a href="data_ns1.html#userProfileWithZones">Type userProfileWithZones</a>
+</li>
+<li>
+<a href="data_ns1.html#value">Type value</a>
+</li>
+<li>
+<a href="data_ns1.html#valueWithNames">Type valueWithNames</a>
+</li>
+<li>
+<a href="data_ns1.html#zonesJsonConverter">Type zonesJsonConverter</a>
+</li>
+</ul>
+</div>
+<div class="clearer">
+<span/>
+</div>
+</div>
+<div class="footer">&#169; www.garmin.com.
+      Valid 
+<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and 
+<a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+      Generated by 
+<a href="http://enunciate.codehaus.org">Enunciate</a>. Template design by 
+<a href="http://templates.arcsin.se">Arcsin</a>.
+    </div>
+</div>
+</body>
+</html>
